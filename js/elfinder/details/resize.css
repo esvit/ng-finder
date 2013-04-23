@@ -1,0 +1,7 @@
+.elfinder-resize-uiresize, .elfinder-resize-uicrop, .elfinder-resize-rotate {
+    width: 200px;
+}
+
+.elfinder-resize-uiresize input[type="text"], .elfinder-resize-uicrop input[type="text"], .elfinder-resize-rotate input[type="text"] {
+    width: 70px;
+}
