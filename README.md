@@ -1,7 +1,7 @@
 elFinder + AngularJS
 ======
 
-![Demo](https://d2oawfjgoy88bd.cloudfront.net/516ea246e4b022cf314779ae/516ea246e4b022cf314779b0/5176fa98e4b0484a551bd6e2.png?Expires=1366751978&Signature=VHlh5MiqOUH0o9hTmy5mE62KRzEWisILNMijQFaVxTs8VYq1H3cnqMTUJTqme4nwze9YlZQU3FA1E0~Pl-z0D4Rof0BeChBQbBb0y97PI4tc4dcGFg0scejXNNi9d9vexf8lLDR4cPa7zPt-SRrv6XblX805sF22YBIZvFeQ5Q0_&Key-Pair-Id=APKAITAZRW24HHYVXS3A)
+![Demo](https://api.monosnap.com/image/download?id=0A9flsgc8HbZp47gHy4L0Crju)
 
 ```html
 <div class="el-finder"
