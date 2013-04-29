@@ -2,7 +2,7 @@
  * <div class="el-finder" toolbar="mkdir,mkfile,upload|open,download|info|copy,cut"></div>
  */
 angular.module('ngFinder', [])
-    .directive('elFinder', function() {
+    .directive('elFinder', function($parse) {
         return {
             restrict: 'C',
             scope: {
@@ -38,12 +38,19 @@ angular.module('ngFinder', [])
                         cwd    : menus.cwd.split(','),
                         files  : menus.files.split(',')
                     },
-                    url : attrs.url || '/elfinder'
+                    url : attrs.url || '/elfinder',
+                    commandsOptions : {
+                        getfile: {
+                            onlyURL: false
+                        }
+                    }
                 };
-                if (attrs.select) {
+                if (scope.onSelect) {
                     options.contextmenu.files.unshift('getfile');
-                    options.getFileCallback = function(url) {
-                        scope.selectFile(url);
+                    options.onlyMimes = ["image"];
+                    options.getFileCallback = function(file) {
+                        $('#elfinder').hide();
+                        scope.onSelect({ '$file': file });
                     }
                 }
                 $(element).elfinder(options);
