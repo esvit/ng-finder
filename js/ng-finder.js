@@ -45,7 +45,7 @@ angular.module('ngFinder', [])
                         }
                     }
                 };
-                if (scope.onSelect) {
+                if (attrs.select) {
                     options.contextmenu.files.unshift('getfile');
                     options.onlyMimes = ["image"];
                     options.getFileCallback = function(file) {
