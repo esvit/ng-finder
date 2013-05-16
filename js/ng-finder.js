@@ -28,6 +28,7 @@ angular.module('ngFinder', [])
                 }
 
                 var options = {
+                    allowShortcuts: false,
                     // lang: 'ru',             // language (OPTIONAL)
                     rememberLastDir : true,
                     uiOptions: {
