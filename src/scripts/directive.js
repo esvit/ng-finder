@@ -57,7 +57,7 @@ angular.module('ngFinder', [])
                 $(element).elfinder(options);
                 $('.elfinder-toolbar', element).addClass('btn-toolbar');
                 $('.elfinder-buttonset', element).addClass('btn-group');
-                $('.elfinder-button', element).addClass('btn');
+                $('.elfinder-button', element).addClass('btn btn-default');
                 // glyphicons
                 var replaceClasses = {
                     'back': 'arrow-left',
@@ -86,7 +86,7 @@ angular.module('ngFinder', [])
                 angular.forEach(replaceClasses, function(newClass, oldClass) {
                     $('.elfinder-button-icon-' + oldClass, element)
                         .removeClass('elfinder-button-icon')
-                        .addClass('glyphicon glyphicon-' + newClass);
+                        .addClass('icon-' + newClass);
                 });
             }
         };
