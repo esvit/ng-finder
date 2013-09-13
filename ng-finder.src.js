@@ -1,3 +1,12 @@
+(function(angular, factory) {
+    if (typeof define === 'function' && define.amd) {
+        define('ngFinder', ['jquery', 'angular', 'elfinder'], function($, angular) {
+            return factory(angular);
+        });
+    } else {
+        return factory(angular);
+    }
+}(angular || null, function(angular) {
 /**
  * <div class="el-finder" toolbar="mkdir,mkfile,upload|open,download|info|copy,cut"></div>
  */
@@ -91,3 +100,5 @@ angular.module('ngFinder', [])
             }
         };
     });
+    return angular.module('ngFinder');
+}));

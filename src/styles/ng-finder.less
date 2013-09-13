@@ -1,9 +1,9 @@
 /* Bootstrap 3 */
-@import "bootstrap/variables.less";
-@import "bootstrap/mixins.less";
-@import "bootstrap/modals.less";
-@import "bootstrap/close.less";
-@import "bootstrap/navs.less";
+@import "../../bower_components/bootstrap/less/variables.less";
+@import "../../bower_components/bootstrap/less/mixins.less";
+@import "../../bower_components/bootstrap/less/modals.less";
+@import "../../bower_components/bootstrap/less/close.less";
+@import "../../bower_components/bootstrap/less/navs.less";
 
 .elfinder-dialog-resize{margin-top:.3em}
 .elfinder-resize-type{float:left;margin-bottom:.4em}
@@ -86,7 +86,7 @@
         overflow:hidden;
     }
     .elfinder-navbar {
-        .make-column(3);
+        .make-sm-column(3);
         padding: 5px;
         background-image:none;
         border-top:0 solid;
@@ -101,12 +101,12 @@
         /* navbar */
         .elfinder-navbar-dir {
             &:hover, &:focus {
-              background-color: @grayLighter;
+              background-color: #d3d3d3;
             }
         }
         .ui-state-active {
-            color: @btn-color;
-            .btn-pseudo-states(@btn-primary-bg, @btn-primary-bg);
+            color: @btn-primary-color;
+            //.btn-pseudo-states(@btn-primary-bg, @btn-primary-bg);
         }
     }
     /* disabled elfinder */
@@ -117,7 +117,7 @@
         .box-shadow(none);
     }
     .elfinder-cwd-wrapper{
-        .make-column(9);
+        .make-sm-column(9);
         overflow:auto;
         position:relative;
         padding:5px 2px;
@@ -499,7 +499,7 @@ embed.elfinder-quicklook-preview-audio{height:30px;background:0 0}
 /* common selected background/color */
 .elfinder-cwd-view-icons .elfinder-cwd-file .elfinder-cwd-filename.ui-state-hover,
 .elfinder-cwd table td.ui-state-hover,
-.elfinder-button-menu .ui-state-hover { background: @btn-primary-bg; color: @btn-color;}
+.elfinder-button-menu .ui-state-hover { background: @btn-primary-bg; color: @btn-primary-color;}
 
 /* disabled elfinder */
 .elfinder-disabled .elfinder-cwd-view-icons .elfinder-cwd-file .elfinder-cwd-filename.ui-state-hover,

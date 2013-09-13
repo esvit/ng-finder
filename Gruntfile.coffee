@@ -7,40 +7,40 @@ module.exports = (grunt) ->
         clean:
             working:
                 src: [
-                    'ng-ckeditor.*'
+                    'ng-finder.*'
                     './.temp/views'
                     './.temp/'
                 ]
         copy:
             styles:
                 files: [
-                    src: './src/styles/ng-ckeditor.css'
-                    dest: './ng-ckeditor.css'
+                    src: './src/styles/ng-finder.css'
+                    dest: './ng-finder.css'
                 ]
 
         uglify:
             # concat js files before minification
             js:
-                src: ['ng-ckeditor.src.js']
-                dest: 'ng-ckeditor.js'
+                src: ['ng-finder.src.js']
+                dest: 'ng-finder.js'
                 options:
                   sourceMap: (fileName) ->
                     fileName.replace /\.js$/, '.map'
+
         concat:
-            # concat js files before minification
             js:
-                src: ['src/scripts/directive.js', './src/plugins/*.js', './.temp/scripts/views.js']
-                dest: 'ng-ckeditor.src.js'
+                src: ['src/scripts/intro.js', 'src/scripts/directive.js', 'src/scripts/outro.js']
+                dest: 'ng-finder.src.js'
 
         less:
             css:
                 files:
-                    'ng-ckeditor.css': 'src/styles/ng-ckeditor.less'
+                    'ng-finder.css': 'src/styles/ng-finder.less'
 
         cssmin:
             css:
                 files:
-                    'ng-ckeditor.css': 'ng-ckeditor.css'
+                    'ng-finder.css': 'ng-finder.css'
 
         ngTemplateCache:
             views:
@@ -48,7 +48,7 @@ module.exports = (grunt) ->
                     './.temp/scripts/views.js': './src/views/**/*.html'
                 options:
                     trim: './.temp/'
-                    module: 'ngCkeditor'
+                    module: 'ngFinder'
 
     # Register grunt tasks supplied by grunt-contrib-*.
     # Referenced in package.json.
