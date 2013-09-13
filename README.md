@@ -4,8 +4,8 @@ Code licensed under New BSD License.
 
 ## Installing via Bower
 ```
-bower install https://github.com/esvit/ng-ckeditor.git
-'''
+bower install ng-finder
+```
 
 ```html
 <div class="el-finder"
