@@ -1,7 +1,11 @@
 elFinder + AngularJS
-======
+====================
+Code licensed under New BSD License.
 
-![Demo](https://api.monosnap.com/image/download?id=0A9flsgc8HbZp47gHy4L0Crju)
+## Installing via Bower
+```
+bower install https://github.com/esvit/ng-ckeditor.git
+'''
 
 ```html
 <div class="el-finder"
@@ -13,7 +17,3 @@ elFinder + AngularJS
 </div>
 ```
 
-# TinyMCE integration
-
-I use [Angular UI](http://angular-ui.github.io/) TinyMCE directive.
-Just add `ng-finder_tinymce.js` to you project and ngFinderTinyMCE module.

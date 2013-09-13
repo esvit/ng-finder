@@ -1,0 +1,12 @@
+{
+  "name": "ng-ckeditor",
+  "version": "0.1.0",
+  "main": "ng-ckeditor.js",
+  "ignore": [
+    "examples"
+  ],
+  "dependencies": {
+    "ckeditor": "https://github.com/eymengunay/ckeditor.git",
+    "angular": "1.2.0-rc.1"
+  }
+}
