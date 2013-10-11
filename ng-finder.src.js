@@ -15,7 +15,7 @@ angular.module('ngFinder', [])
         return {
             restrict: 'C',
             scope: {
-                'file'      : '=',
+                'url'      : '=url',
                 'onSelect'  : '&select'
             },
             controller: ['$scope', function($scope) {
@@ -48,7 +48,7 @@ angular.module('ngFinder', [])
                         cwd    : menus.cwd.split(','),
                         files  : menus.files.split(',')
                     },
-                    url : attrs.url || '/elfinder',
+                    url : scope.url || '/elfinder',
                     commandsOptions : {
                         getfile: {
                             onlyURL: false
